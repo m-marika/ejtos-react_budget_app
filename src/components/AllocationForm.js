@@ -9,12 +9,17 @@ const AllocationForm = (props) => {
     const [action, setAction] = useState('');
 
     const submitEvent = () => {
+            if(remaining < 0) {
+                alert("You cannot reduce the budget valueblower than the spanding remaining funds");
+                return;
+            }
 
             if(cost > remaining) {
                 alert("The value cannot exceed remaining funds  £"+remaining);
                 setCost("");
                 return;
             }
+            
 
         const expense = {
             name: name,

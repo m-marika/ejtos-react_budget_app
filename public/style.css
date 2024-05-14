@@ -1,0 +1,20 @@
+.custom-select {
+    width: 200px; /* Ширина select */
+    padding: 10px; /* Отступ внутри select */
+    border: 1px solid #ccc; /* Граница select */
+    border-radius: 5px; /* Скругление углов select */
+    background-color: #f0f0f0; /* Цвет фона select */
+  }
+  
+/* Стили для option */
+.custom-select option {
+    padding: 10px; /* Отступ внутри option */
+    background-color: #fff; /* Цвет фона option */
+    color: #000; /* Цвет текста option */
+  }
+  
+/* Стили для выбранного option */
+.custom-select option:checked {
+    background-color: #00cc00; /* Цвет фона выбранного option */
+    color: #fff; /* Цвет текста выбранного option */
+  }

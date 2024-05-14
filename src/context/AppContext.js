@@ -71,6 +71,12 @@ export const AppReducer = (state, action) => {
                 ...state
             }
 
+        case 'SET_CURRENCY': // Добавляем новый case для установки валюты
+            return {
+                ...state,
+                currency: action.payload, // Устанавливаем новое значение валюты из переданного действия
+            };
+
         default:
             return state;
     }
