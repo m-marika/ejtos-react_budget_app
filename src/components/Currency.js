@@ -14,13 +14,11 @@ const Currency = () => {
 
     return (
         <div style={{ display: 'inline-block' }}>
-            
-            <label className="input-group-text" htmlFor="inputGroupSelect01">{`Currency(${selectedCurrency})`}</label>
-            <select className="custom-select" id="inputGroupSelect01" value={selectedCurrency} onChange={handleCurrencyChange} style={{ backgroundColor: 'lightgreen', color: 'green' }}>
-                <option value="£ Pound">£ Pound</option>
-                <option value="$ Dollar">$ Dollar</option>
-                <option value="€ Euro">€ Euro</option>
-                <option value="₹ Ruppee">₹ Ruppee</option>
+            <select className="custom-select" id="inputGroupSelect01" value={selectedCurrency} onChange={handleCurrencyChange} style={{ backgroundColor: 'lightgreen', color: 'green', padding: '10px' }}>
+                <option value="£ Pound" style={{ padding: '5px' }}>Currency (£ Pound)</option>
+                <option value="$ Dollar">Currency ($ Dollar)</option>
+                <option value="€ Euro">Currency (€ Euro)</option>
+                <option value="₹ Ruppee">Currency (₹ Ruppee)</option>
             </select>
         </div>
     );
